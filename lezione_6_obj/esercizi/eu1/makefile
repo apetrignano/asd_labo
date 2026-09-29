@@ -1,4 +1,0 @@
-compila:
-	javac Euclide.java
-execute:
-	java Euclide
