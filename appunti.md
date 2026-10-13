@@ -13,3 +13,5 @@ Per evitare problemi non aderenti allo standard `C90` noi nel nostro `makefile` 
 ``` 
     gcc -o prog programma.c -Wall -ansi -pedantic
 ```
+
+# Lezione 2
