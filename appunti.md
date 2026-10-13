@@ -14,4 +14,29 @@ Per evitare problemi non aderenti allo standard `C90` noi nel nostro `makefile` 
     gcc -o prog programma.c -Wall -ansi -pedantic
 ```
 
-# Lezione 2
+# Lezione 3
+
+Non c'è molto da dire, semplicemente che per quanto riguarda le strutture dati (all'esame bisognerà scrivere proprio delle struct), bisogna usare degli operatori per l'accesso ai membri della struttura, il punto e la freccia, ad es p.x e p->x; chiaramente non sono la stessa cosa e bisogna far attenzione (sincero per ora mai imparata sta cosa)
+
+## Differenza tra operatori di accesso
+
+Il punto accede al membro di una struttura, semplicemente, mentre la freccia serve per la manipolazione di puntatori, quindi bisogna usarla quando noi non abbiamo creato una struttura di un certo tipo, bensì quando è stato creato un puntatore alla struttura
+
+### Esempio
+```c
+struct utente
+{
+    int id;
+    char nome[BUFSIZ];
+}
+
+utente p1;
+p1.id = 1;
+strcpy(p1.nome, "Adriano");
+
+utente *p;
+p2->id = 2;
+strcpy(p2->nome, "Alice");
+```
+
+Speriamo che detto così si capisca bene, perchè è stra importante.
